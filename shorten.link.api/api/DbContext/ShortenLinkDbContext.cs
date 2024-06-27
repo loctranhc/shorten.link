@@ -6,6 +6,7 @@ namespace api.DbContext
     public class ShortenLinkDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
         public DbSet<ShortenLink> ShortenLinks { get; set; }
+        public DbSet<WorkerLog> WorkerLogs { get; set; }
 
         public ShortenLinkDbContext(DbContextOptions<ShortenLinkDbContext> options) : base(options) {}
 
